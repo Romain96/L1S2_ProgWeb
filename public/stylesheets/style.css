@@ -9,14 +9,24 @@ a {
 }
 
 #bandeau {
-	border: solid 10px;
+	border-radius: 25px;
+	border: groove 10px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	border-color: #00FFFF;
+	text-align: center;
 }
 
 h1 {
 	text-align: center;
 	font: 25px "Lucida Grande", Helvetica, Arial, sans-serif;
 	text-decoration: capitalize;
+}
+
+li.twit {
+	border : solid 2px;
+	border-color: #4682B4;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
 }

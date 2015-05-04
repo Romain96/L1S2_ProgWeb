@@ -5,10 +5,10 @@ block content
     h1= title
   p Bienvenue sur le #{title}
   form(method='POST' , action='/')
-    textarea(rows=4, cols=60, maxlength=256,name="tweet")
+    textarea(rows=4, cols=60, maxlength=256,name="twit")
     br(\='')
     input(type='submit', value='Envoyer')
 
   ul
-  - each tweet in tweets
-    li= tweet
+  - each twit in twits
+    li.twit= twit
