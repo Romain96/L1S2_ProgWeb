@@ -1,16 +1,14 @@
 extends layout
 
 block content
-	#bandeau
-		h1= title
+  #bandeau
+    h1= title
+  p Bienvenue sur le #{title}
+  form(method='POST' , action='/')
+    textarea(rows=4, cols=60, maxlength=256,name="tweet")
+    br(\='')
+    input(type='submit', value='Envoyer')
 
-	p Bienvenue sur le #{title}
-
-	form
-		label(for='tweet') Quoi de neuf ?
-		br(\='')
-		textarea#tweet(rows='4', cols='60', maxlength='256')
-		br(\='')
-		input(type='submit', value='Envoyer')
-		
-
+  ul
+  - each tweet in tweets
+    li= tweet
