@@ -1,14 +1,21 @@
 extends layout
 
 block content
-  #bandeau
+  #banner
+    img.img_banner_left(src='./images/octocat.png', alt='Octocat')
     h1= title
-  p Bienvenue sur le #{title}
+    img.img_banner_right(src='./images/octocat2.png', alt='Octocat2')
+  p Quoi de neuf ?
   form(method='POST' , action='/')
+    | Votre nom : 
+    input(type='text', name='name')
+    br
     textarea(rows=4, cols=60, maxlength=256,name="twit")
-    br(\='')
+    br
     input(type='submit', value='Envoyer')
+    input(type='submit', value='Recharger')
 
   ul
-  - each twit in twits
-    li.twit= twit
+  - each twit in twits  
+    li.name= twit.name+', envoyé le '+twit.date+' à '+twit.hour
+    li.twit= twit.twit

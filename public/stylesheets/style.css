@@ -1,32 +1,67 @@
 body {
 	background-color: #00BFFF;
 	padding: 50px;
-	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
 	color: #00B7FF;
 }
 
-#bandeau {
+#banner {
 	border-radius: 25px;
 	border: groove 10px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	border-color: #00FFFF;
-	text-align: center;
+	border-color: #424242;
+	background-color: #99FFFF;
 }
 
 h1 {
 	text-align: center;
-	font: 25px "Lucida Grande", Helvetica, Arial, sans-serif;
-	text-decoration: capitalize;
+	font: 60px "Lucida Grande", Helvetica, Arial, sans-serif;
+	font-style: italic;
+	text-shadow: 4px 4px #AAAAAA;
+	display: inline;
+	position: relative;
+	bottom: 90px;
+	left: 125px;
+	border: dashed 4px;
+	border-color: #FF0074;
+	padding: 10px 10px 10px 10px;
+}
+
+.img_banner_left {
+	position: relative;
+	left: 0px;
+}
+
+.img_banner_right {
+	position: absolute;
+	right: 5%;
+}
+
+input, textarea {
+  	background-color : #99FFFF;$
+	border: groove 6px;
+	border-radius: 10px;
+	border-color: #424242;
 }
 
 li.twit {
-	border : solid 2px;
-	border-color: #4682B4;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	border-radius: 15px;
 	text-align: center;
+	border-style: solid;
+	list-style-type: none;
+	word-wrap: break-word;
+	border: groove 4px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-color: #424242;
+	background-color: #99FFFF;
+}
+
+li.name {
+	margin-bottom: 0px;
+	margin-top: 20px;
 }
