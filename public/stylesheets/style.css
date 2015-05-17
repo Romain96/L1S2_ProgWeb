@@ -8,59 +8,63 @@ a {
 	color: #00B7FF;
 }
 
+/* bannière contenant un titre et deux images de part et d'autre du titre */
 #banner {
-	border-radius: 25px;
-	border: groove 10px;
-	margin-top: 10px;
+	border: groove 10px;										/* cadre de 10px de large, style rainuré */
+	border-radius: 25px;										/* bords arrondis (courbure de 25px) */
+	margin-top: 10px;											/* marge de 10px en haut et en bas */
 	margin-bottom: 10px;
-	border-color: #424242;
+	border-color: #424242;										/* 42 ! */
 	background-color: #99FFFF;
 }
 
 h1 {
-	text-align: center;
-	font: 60px "Lucida Grande", Helvetica, Arial, sans-serif;
-	font-style: italic;
-	text-shadow: 4px 4px #AAAAAA;
-	display: inline;
+	border: dashed 4px;											/* bordure en pointillées */
+	border-color: #FF0074;										/* couleur violette */
+	font: 60px "Lucida Grande", Helvetica, Arial, sans-serif;	/* police d'écriture */
+	font-style: italic;											/* texte du titre en italique */
+	text-align: center;											/* texte centré */
+	text-shadow: 4px 4px #AAAAAA;								/* décoration : ombrage gris du titre */
+	display: inline;											/* affichage "inline" (pour le placer dans le bandeau */
 	position: relative;
 	bottom: 90px;
-	left: 125px;
-	border: dashed 4px;
-	border-color: #FF0074;
+	left: 20%;
 	padding: 10px 10px 10px 10px;
 }
 
+/* classe de l'image de gauche dans le bandeau */
 .img_banner_left {
 	position: relative;
 	left: 0px;
 }
 
+/* classe de l'image de droite dans le bandeau */
 .img_banner_right {
 	position: absolute;
 	right: 5%;
 }
 
 input, textarea {
-  	background-color : #99FFFF;$
-	border: groove 6px;
-	border-radius: 10px;
+	border: groove 6px;											/* Bodure de 6px de style rainuré */
+	border-radius: 10px;										/* bordure arrondie à 10px */
 	border-color: #424242;
+	background-color : #99FFFF;
 }
 
+/* classe des tweet (twit) */
 li.twit {
-	border-radius: 15px;
-	text-align: center;
-	border-style: solid;
-	list-style-type: none;
-	word-wrap: break-word;
 	border: groove 4px;
+	border-radius: 15px;
+	border-color: #424242;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	border-color: #424242;
+	text-align: center;
+	list-style-type: none;
+	word-wrap: break-word;
 	background-color: #99FFFF;
 }
 
+/* classe du nom du tweet */
 li.name {
 	margin-bottom: 0px;
 	margin-top: 20px;
