@@ -5,12 +5,11 @@ block content
     img.img_banner_left(src='./images/octocat.png', alt='Octocat')
     h1= title
     img.img_banner_right(src='./images/octocat2.png', alt='Octocat2')
-  p Quoi de neuf ?
   form(method='POST' , action='/')
     | Votre nom : 
     input(type='text', name='name', placeholder='Ex : fsenat')
     br
-    textarea(rows=4, cols=60, maxlength=256,name="twit", placeholder='Votre Message')
+    textarea(rows=4, cols=60, maxlength=256,name="twit", placeholder='Quoi de neuf ? Docteur')
     br
     input(type='submit', value='Twité')
     input(type="button", onclick='window.location.reload(false)', value="Rafraichir")
