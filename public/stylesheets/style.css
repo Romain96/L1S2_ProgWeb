@@ -14,7 +14,7 @@ a {
 	border-radius: 25px;										/* bords arrondis (courbure de 25px) */
 	margin-top: 10px;											/* marge de 10px en haut et en bas */
 	margin-bottom: 10px;
-	border-color: #424242;										/* 42 ! */
+	border-color: #848484;										/* 42 ! */
 	background-color: #99FFFF;
 }
 
@@ -47,7 +47,7 @@ h1 {
 input, textarea {
 	border: groove 6px;											/* Bodure de 6px de style rainuré */
 	border-radius: 10px;										/* bordure arrondie à 10px */
-	border-color: #424242;
+	border-color: #848484;
 	background-color : #99FFFF;
 }
 
@@ -55,7 +55,7 @@ input, textarea {
 li.twit {
 	border: groove 4px;
 	border-radius: 15px;
-	border-color: #424242;
+	border-color: #848484;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	text-align: center;
