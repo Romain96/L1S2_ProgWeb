@@ -8,13 +8,12 @@ block content
   p Quoi de neuf ?
   form(method='POST' , action='/')
     | Votre nom : 
-    input(type='text', name='name')
+    input(type='text', name='name', placeholder='Ex : fsenat')
     br
-    textarea(rows=4, cols=60, maxlength=256,name="twit")
+    textarea(rows=4, cols=60, maxlength=256,name="twit", placeholder='Votre Message')
     br
-    input(type='submit', value='Envoyer')
-    input(type='submit', value='Recharger')
-
+    input(type='submit', value='Twité')
+    input(type="button", onclick='window.location.reload(false)', value="Rafraichir")
   ul
   - each twit in twits  
     li.name= twit.name+', envoyé le '+twit.date+' à '+twit.hour

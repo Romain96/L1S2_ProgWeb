@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var twits = [10];
+var twits = [];
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 router.post('/', function(req, res, next) {
 	var twit = req.body.twit;
 	var name = req.body.name;
-	if (name!=""&&twit!=""){
+	if (name!=""&&twit!=""&&name!=undefined){
 		var now = new Date;	
 		var day = now.getDate();
 		var month = now.getMonth()+1;
@@ -24,7 +24,7 @@ router.post('/', function(req, res, next) {
 	}
 	if (twits.length==11)
 		twits.pop();
-    res.redirect('/')
+    res.redirect('/');
 });
 
 module.exports = router;
